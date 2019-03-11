@@ -108,7 +108,7 @@ function main() {
   score = 0;
   distance = 0;
   ded = false;
-  speed = 0.4;
+  speed = 0.6;
   jumpsound = new sound('jump.wav');
   collidesound = new sound('traincollide.wav');
   coinsound = new sound('coin.wav');
@@ -413,17 +413,15 @@ function main() {
     }
 
     if (c.pos[2] - collidestart <= 25.0 && collidestart != -1.0) {
-      speed = 0.16;
+      speed = 0.25;
     }
     else if (c.pos[2] - collidestart > 25.0 && collidestart != -1.0) {
-      if (speed < 0.4) {
-        speed = 0.4 + (distance >= 200) * 0.1 + (distance >= 400) * 0.1;
-      }
+      speed = 0.6 + (distance >= 200) * 0.1 + (distance >= 400) * 0.1;
     }
 
     c.pos[2] += speed + (distance >= 200) * 0.1 + (distance >= 400) * 0.1;
-    policeman.pos[2] += 0.375 + (distance >= 200) * 0.1 + (distance >= 400) * 0.1;
-    policedog.pos[2] += 0.375 + (distance >= 200) * 0.1 + (distance >= 400) * 0.1;
+    policeman.pos[2] += 0.5 + (distance >= 200) * 0.1 + (distance >= 400) * 0.1;
+    policedog.pos[2] += 0.5 + (distance >= 200) * 0.1 + (distance >= 400) * 0.1;
     distance += speed + (distance >= 200) * 0.1 + (distance >= 400) * 0.1;
 
 
@@ -442,7 +440,7 @@ function main() {
       targety = 5;
     }
     for (var i = 0; i < 100; i++) {
-      trains[i].pos[2] -= 0.6;
+      trains[i].pos[2] -= 0.7;
     }
     if (magnetcoins) {
       for (var i = 0; i < 501; i++) {
