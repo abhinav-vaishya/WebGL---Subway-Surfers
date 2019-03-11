@@ -1,4 +1,4 @@
-# Graphics Assignment 3 - WebGL - SUbway Surfers
+# Graphics Assignment 3 - WebGL - Subway Surfers
 
 This game is a variant of Subway Surfers, where the player runs on the tracks and tries to escape from the policeman and its dog. The objective of the game is to collect maximum coins and travel maxium distance possible.
 
