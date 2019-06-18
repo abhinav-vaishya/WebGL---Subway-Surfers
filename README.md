@@ -14,6 +14,8 @@ This game is a variant of Subway Surfers, where the player runs on the tracks an
 - Jumping Shoes: The player can jump longer and higher with the help of jumping shoes.
 - Magnets: While the player has a magnet, the coins will automatically be collected when the player is within a certain range.
 
+## How to run
+Enter the command "firefox index.html" on the terminal.
 
 ## Controls
 - Left key: Move left.
